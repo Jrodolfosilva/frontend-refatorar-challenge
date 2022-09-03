@@ -21,17 +21,22 @@ body {
   color: #071723;
 }
 
-.box {
+header {
+  background: url(images/header.png) center right no-repeat;
+  background-size: cover;
+  height: 187px;
+  padding: 23px 36px;
+  width: 100%;
+  margin:16px 0;
+}
+
+main {
   background-color: #f2f2f2;
   border-radius: 8px;
   box-shadow: 10px 22px 34px 0 rgba(0, 0, 0, 0.5);
   margin: 20px auto;
   overflow: hidden;
   width: 550px;
-}
-
-.space {
-  margin-bottom: 16px;
 }
 
 .space-md {
@@ -43,27 +48,21 @@ body {
   font-weight: 600;
 }
 
-.header {
-  background: url(images/header.png) center right no-repeat;
-  background-size: cover;
-  height: 187px;
-  padding: 23px 36px;
-  width: 100%;
-}
 
-.header .title {
+
+header h1 {
   color: #fff;
   font-size: 23px;
   font-weight: 300;
 }
 
-.header .title span {
+header h1 span {
   font-weight: bold;
   font-size: 24px;
   line-height: 1.46;
 }
 
-.form textarea {
+textarea {
   background: #dde3e9;
   border: 1px solid #2f3676;
   border-radius: 8px;
@@ -93,14 +92,14 @@ body {
   width: 60px;
 }
 
-.footer {
+footer {
   padding: 32px;
   background: #dde3e9;
   display: flex;
   justify-content: flex-end;
 }
 
-.footer button {
+footer > button {
   appearance: none;
   background: #2f3676;
   border: 0;
@@ -113,8 +112,8 @@ body {
   padding: 8px 32px;
 }
 
-.footer button:focus,
-.footer button:hover {
+footer > button:focus,
+footer > button:hover {
   border: 2px solid #2f3676;
   background: #191847;
 }
