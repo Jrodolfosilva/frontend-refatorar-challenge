@@ -39,16 +39,12 @@ main {
   width: 550px;
 }
 
-.space-md {
-  margin-bottom: 32px;
-}
-
-.label {
+label {
   font-size: 18px;
   font-weight: 600;
+  display: block;
+  margin: 8px 0;
 }
-
-
 
 header h1 {
   color: #fff;
@@ -77,28 +73,33 @@ textarea {
 .fieldset {
   padding: 0 32px;
 }
+p{
+  margin:8px 0;
+} 
 
+.counter{
+  display: flex;
+}
 .counter svg {
   fill: #2f3676;
-}
 
+}
 .counter input {
   background: #dde3e9;
   border: 1px solid #2f3676;
   border-radius: 7px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   margin: 0 8px;
   width: 60px;
+  padding: 4px;
 }
-
 footer {
   padding: 32px;
   background: #dde3e9;
   display: flex;
   justify-content: flex-end;
 }
-
 footer > button {
   appearance: none;
   background: #2f3676;
