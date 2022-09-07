@@ -1,17 +1,22 @@
 const response = document.querySelector("#resp");
 
 
-let value =10
+let valueContador = 0;
 
-response.innerHTML=value
 
 function adicionar(){
-    
- 
+    response.value = valueContador+=1
+    console.log(valueContador)
 }
 
 function diminuir(){
-    
-    
+   
+    if(valueContador<=0){
+        valueContador = 0
+        console.log(valueContador)
+    }
+    else{
+        response.value = valueContador-=1
+    }
 
 }
